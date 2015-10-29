@@ -21,7 +21,7 @@ describe "The hubot-deploy-heroku", () ->
 
   it "knows about token verification", () ->
     verifier = new TokenVerifier "token"
-    assert.equal "token", verifier.apiToken
+    assert.equal "token", verifier.token
 
   it "knows about the reaper", () ->
     reaper = new Reaper "token", "status"
